@@ -9,6 +9,8 @@ A python program that simulates a food ordering service using a fault tolerant d
 Manages clients requests to a primary server. Primary server can be any of BackEnd 0,1 and 2 based on availability
 
 ### Back-end server 
+Servers will be available in the following order BackEnd0,BackEnd1,BackEnd2. The server will recive the user request from the FrontEnd and preocess it. Then the server will try to update the other BackEnd servers to keep the data consistant across the system. Note: only the primary BackEnd at the time of the request will use the WebService.
+
 
 
 ### Client Implementation
